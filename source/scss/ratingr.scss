@@ -1,0 +1,88 @@
+.ratingr {
+    &-rating {
+        display: flex;
+        margin: 0 0 8px 0;
+        position: relative;
+        align-items: center;
+        gap: 8px;
+    }
+
+    &-loading {
+        opacity: .5;
+        cursor: wait;
+    }
+
+    &-stars {
+        &-container {
+            position: relative;
+            display: inline-block;
+            line-height: 1em;
+            .icon {
+                margin-right: 2px;
+                width: 26px;
+                height: 26px;
+            }
+        }
+
+        &-background {
+            display: inline-block;
+            filter: invert(90%) sepia(16%) saturate(6585%) hue-rotate(359deg) brightness(104%) contrast(101%);
+        }
+
+        &-foreground {
+            position: absolute;
+            top: 0;
+            left: 0;
+            white-space: nowrap;
+            overflow: hidden;
+            filter: invert(90%) sepia(16%) saturate(6585%) hue-rotate(359deg) brightness(104%) contrast(101%);
+        }
+
+        &-hover {
+            position: absolute;
+            top: 0;
+            left: 0;
+            white-space: nowrap;
+            cursor: pointer;
+            opacity: 0;
+        }
+    }
+
+    &-hovering &-stars-hover,
+    &-focus &-stars-hover {
+        filter: invert(90%) sepia(16%) saturate(6585%) hue-rotate(359deg) brightness(104%) contrast(101%);
+        opacity: 0.6;
+    }
+
+    &-hovering {
+        .ratingr-stars {
+            &-foreground {
+                opacity: 0 !important;
+            }
+        }
+    }
+
+    &-rating {
+        &-info {
+            padding-top: 2px;
+            font-size: 14px;
+            color: #666;
+        }
+    }
+
+    &-loading {
+        color: #666;
+    }
+
+    &-success {
+        color: #4CAF50;
+    }
+
+    &-error {
+        color: #F44336;
+    }
+
+    &-already-rated &-stars-container {
+        cursor: default;
+    }
+}
