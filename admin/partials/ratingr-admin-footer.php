@@ -1,10 +1,4 @@
 <?php
-/**
- * Admin footer with version, GitHub link and credits
- *
- * @package    ratingr
- * @subpackage ratingr/admin/partials
- */
 
 if (!defined('WPINC')) {
     die;

@@ -1,21 +1,13 @@
 <?php
-/**
- * Admin settings page content
- *
- * @package    ratingr
- * @subpackage ratingr/admin/partials
- */
 
 if (!defined('WPINC')) {
     die;
 }
 
-// Check user capabilities
 if (!current_user_can('manage_options')) {
     return;
 }
 
-// Save settings if form submitted
 if (isset($_POST['ratingr_settings_nonce']) && wp_verify_nonce($_POST['ratingr_settings_nonce'], 'ratingr_settings')) {
     update_option('ratingr_disable_default_css', isset($_POST['ratingr_disable_default_css']) ? 1 : 0);
     echo '<div class="notice notice-success is-dismissible"><p>' . __('Settings saved successfully.', 'ratingr') . '</p></div>';

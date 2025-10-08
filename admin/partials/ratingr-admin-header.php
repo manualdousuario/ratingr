@@ -1,16 +1,9 @@
 <?php
-/**
- * Admin header with navigation menu
- *
- * @package    ratingr
- * @subpackage ratingr/admin/partials
- */
 
 if (!defined('WPINC')) {
     die;
 }
 
-// Get current page
 $current_page = isset($_GET['page']) ? $_GET['page'] : 'ratingr-posts-rating';
 ?>
 

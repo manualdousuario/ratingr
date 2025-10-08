@@ -4,6 +4,7 @@
 [![WordPress](https://img.shields.io/badge/wordpress-6.7+-blue.svg)](https://wordpress.org/)
 [![PHP](https://img.shields.io/badge/php-7.4+-purple.svg)](https://php.net/)
 [![License](https://img.shields.io/badge/license-GPL%20v2-red.svg)](https://www.gnu.org/licenses/gpl-2.0.html)
+[![Multisite](https://img.shields.io/badge/multisite-compatible-green.svg)](https://wordpress.org/support/article/create-a-network/)
 
 A simple and elegant 5-star rating system for WordPress.
 
